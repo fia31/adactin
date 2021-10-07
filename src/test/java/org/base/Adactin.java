@@ -53,9 +53,8 @@ public class Adactin {
 		m.selectbyindex("//select[@id='cc_exp_year']", yeari);	
 		String cvv = m.excelread("C:\\Users\\solo\\Documents\\adact.xlsx", "adact", 0, 6, "dd-MMM-yy");
 		m.sendkeys("//input[@id='cc_cvv']", cvv);
-//		m.click("//a[contains(text(),'Logout')]");
-//		m.click("//a[contains(text(),'Click here to login again')]");
-		
-//		m.click("//input[@id='book_now']");
+		m.click("//a[contains(text(),'Logout')]");
+		m.click("//a[contains(text(),'Click here to login again')]");
+		m.click("//input[@id='book_now']");
 	}
 }
